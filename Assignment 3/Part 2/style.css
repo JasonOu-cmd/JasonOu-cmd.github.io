@@ -4,3 +4,38 @@ html {
 
 /* Your CSS below here */
 
+.fancy-box {
+  width: 200px;
+  height: 120px;
+  margin: 40px auto; /* Center horizontally */
+  display: flex;
+  align-items: center;    /* Center vertically */
+  justify-content: center;/* Center horizontally */
+  text-align: center;
+
+  /* Font size: 1.1rem × 16px = 17.6px (browser default is 16px) */
+  font-size: 1.1rem; /* 1.1 × 16px = 17.6px */
+
+  /* Base color and contrasting text color */
+  background-color: #4a90e2; /* blue base color */
+  color: #fff;
+  text-shadow: 1px 1px 2px #000;
+
+  /* Border and border radius */
+  border: 1px solid #3570b5; /* slightly darker than base */
+  border-radius: 12px;
+
+  /* Gradient overlay */
+  background-image:
+    linear-gradient(135deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 30%, rgba(0,0,0,0.2) 100%);
+
+  /* Box shadows: 1 normal, 2 inset for 3D effect */
+  box-shadow:
+    0 4px 16px rgba(0,0,0,0.18), /* standard shadow */
+    inset 3px 3px 8px rgba(255,255,255,0.25), /* top left white */
+    inset -4px -4px 12px rgba(0,0,0,0.18);    /* bottom right black */
+}
+
+/* 
+Font size calculation:
+Browser default is 16px. 1.1rem × 16px = 17.6px, which is within the 17–18px
