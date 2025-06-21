@@ -193,3 +193,13 @@ nav a:active {
   background: #fff;
   color: #2d2d5a;
 }
+
+/* 8. Horizontal bars (example) */
+.header-bar, .footer-bar {
+  height: 8px;
+  background: #2d2d5a;
+  margin-bottom: 2rem;
+}
+.footer-bar {
+  margin-top: 2rem;
+}
