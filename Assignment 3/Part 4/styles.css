@@ -49,3 +49,31 @@ body {
   .feature {
       width: 200px;
   }
+
+  /* Navigation bar: horizontal layout with equal spacing */
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Sticky navigation bar */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #2d2d5a; /* or your nav background color */
+}
+
+/* Article image: text wrap */
+article img {
+  float: left;
+  margin: 0 1.5em 1em 0;
+  max-width: 40%;
+  height: auto;
+  display: block;
+}
+
