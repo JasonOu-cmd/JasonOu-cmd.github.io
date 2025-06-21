@@ -96,3 +96,46 @@ h3 { font-size: 2rem; }
 h4 { font-size: 1.7rem; }
 h5 { font-size: 1.5rem; }
 h6 { font-size: 1.3rem; }
+
+/* 4. Paragraphs and text */
+p {
+  margin: 1.2rem 0;
+  letter-spacing: 0.02em;
+  word-spacing: 0.08em;
+}
+section h1 + p,
+section h2 + p,
+section h3 + p,
+section h4 + p,
+section h5 + p,
+section h6 + p {
+  text-indent: 20px;
+}
+
+/* 5. Links */
+a, a:visited {
+  color: #2d2d5a;
+  text-decoration: underline;
+  outline: none;
+  position: relative;
+}
+a:hover, a:focus {
+  color: #b85c38;
+  text-decoration: none;
+  outline: none;
+}
+a:active {
+  color: #fff;
+  background: #2d2d5a;
+  text-decoration: underline wavy;
+  border-radius: 2px;
+  padding: 0 2px;
+}
+a.external::after {
+  content: url('external-link.svg');
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-left: 0.2em;
+  vertical-align: middle;
+}
