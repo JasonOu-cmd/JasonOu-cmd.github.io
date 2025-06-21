@@ -77,3 +77,47 @@ article img {
   display: block;
 }
 
+/* grid layout for main content */
+.grid {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.grid article {
+  flex: 3 1 0;
+  min-width: 0;
+}
+
+.grid aside {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+/* Stack columns on small screens */
+@media (max-width: 700px) {
+  .grid {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+}
+
+.photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.photos li {
+  margin: 0;
+  padding: 0;
+}
+
+.photos img {
+  width: 100%;
+  display: block;
+}
+
