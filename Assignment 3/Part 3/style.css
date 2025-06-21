@@ -126,7 +126,7 @@ a:hover, a:focus {
 }
 a:active {
   color: #fff;
-  background: #2d2d5a;
+  background: #ffffff;
   text-decoration: underline wavy;
   border-radius: 2px;
   padding: 0 2px;
@@ -150,18 +150,25 @@ ul, ol {
   margin: 1.2rem 0;
   padding-left: 2.2rem;
 }
-li {
+ nav ul li {
   line-height: 1.7;
   margin: 0.4rem 0;
-  list-style-type: disc;
+  background: #eeeeee;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 0.8em 1.2em;
+  /* Optional: add spacing between boxes */
+  margin-bottom: 0.8em;
+  /* Optional: add a subtle box shadow */
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
 }
-ul.custom-bullets li {
+ul.custom-bullets {
   list-style-image: url('bullet.svg');
 }
 
 /* 7. Navigation menu (vertical) */
 nav {
-  background: #2d2d5a;
+  background: #ffffff;
   padding: 2rem 0;
   width: 220px;
   min-height: 100vh;
