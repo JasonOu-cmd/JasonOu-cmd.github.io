@@ -1,8 +1,8 @@
 <!--
 Name: Jason Ou
-Filename: index.html
+Filename: resume.html
 Date: 2025-07-19
-Description: Creating resume using HTML, CSS and java.
+Description: Creating resume using HTML and CSS.
 -->
 <!DOCTYPE html>
 <html lang="en-US">
@@ -11,5 +11,108 @@ Description: Creating resume using HTML, CSS and java.
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jason Ou's Resume</title>
     <link rel="stylesheet" href="style.css" />
+    <style>
+      h2 {
+        border-bottom: 1px solid #aaa;
+        padding-bottom: 4px;
+        margin-top: 2em;
+      }
+      .contact {
+        text-align: center;
+        margin-bottom: 2em;
+        font-size: 1.1em;
+      }
+      ul, .section-list {
+        margin: 0 0 1.5em 0;
+        padding-left: 1.2em;
+      }
+      li {
+        margin-bottom: 0.5em;
+      }
+      .job-title {
+        font-weight: bold;
+        margin-top: 1em;
+      }
+      .section-list {
+        list-style: none;
+        padding-left: 0;
+      }
+      .section-list li {
+        margin-bottom: 0.8em;
+      }
+      address {
+        font-style: normal;
+        text-align: center;
+        margin-bottom: 1.5em;
+      }
+    </style>
 </head>
-<body></body>
+<body>
+    <h1>Jason Ou</h1>
+    <address>
+      225 Kentland Street, L6E 2E2<br>
+      647-919-1788<br>
+      <a href="mailto:oujason9@gmail.com">oujason9@gmail.com</a>
+    </address>
+
+    <main>
+      <section>
+        <h2>Skills</h2>
+        <ul class="section-list">
+          <li>
+            <strong>Communication Skills</strong>
+            <ul>
+              <li>Able to keep composed under pressure and adapt to conversations.</li>
+              <li>Able to listen, understand, and follow clear instructions as well as quickly execute tasks.</li>
+              <li>Have been in the food service industry for a while and have had extensive interactions with customers.</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Problem-solving Skills</strong>
+            <ul>
+              <li>Having experience in finding quick and effective solutions to problems.</li>
+              <li>Efficient at inspecting my surroundings and analyzing that information to find solutions to problems that occur.</li>
+              <li>Worked in fields which have problems that can’t be solved with a single solution, which has provided the ability to look at a problem from multiple angles.</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Work Experience</h2>
+        <ul class="section-list">
+          <li>
+            <span class="job-title">IT Support</span> <span style="float:right;">2021-2022</span><br>
+            Dacom Technical Services INC., Markham, ON
+            <ul>
+              <li>Followed specific instructions to ensure customer satisfaction.</li>
+              <li>Ability to adapt to problems as well as solve problems quickly and efficiently.</li>
+            </ul>
+          </li>
+          <li>
+            <span class="job-title">Cashier</span> <span style="float:right;">2018-2021</span><br>
+            Eastern Restaurant, Markham, ON
+            <ul>
+              <li>Have had extensive experience communicating with customers regarding orders, comments and complaints.</li>
+              <li>Have experience working in a fast-paced environment, as well as being able to stay calm in overwhelming situations.</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Education</h2>
+        <ul class="section-list">
+          <li>
+            <strong>Durham College Electrical Technician</strong> <span style="float:right;">Jan 2021 - 2022</span><br>
+            Whitby, Ontario
+          </li>
+          <li>
+            <strong>Bur Oak Secondary School</strong> <span style="float:right;">Sep 2016 - 2020</span><br>
+            Markham, Ontario
+          </li>
+        </ul>
+      </section>
+    </main>
+</body>
+</html>
