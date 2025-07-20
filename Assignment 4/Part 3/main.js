@@ -65,3 +65,39 @@ document.querySelectorAll('p, li, address').forEach(el => {
     }, 600);
   });
 });
+
+// Always play video before showing page content
+// Loader logic inspired by: 
+// https://stackoverflow.com/questions/22119673/how-to-display-a-loading-screen-while-the-page-is-loading
+document.addEventListener('DOMContentLoaded', function() {
+  const loader = document.getElementById('video-loader');
+  const mainContent = document.querySelector('main');
+  if (mainContent) mainContent.style.display = 'none';
+
+  // Play video for at least 15 seconds, then hide loader and show content
+  const minDuration = 15000;
+  const start = Date.now();
+
+  const hideLoader = () => {
+    if (loader) loader.style.display = 'none';
+    if (mainContent) mainContent.style.display = '';
+  };
+
+  // When video ends or minimum duration passes, hide loader
+  const video = document.getElementById('loader-video');
+  if (video) {
+    video.onended = () => {
+      const elapsed = Date.now() - start;
+      if (elapsed < minDuration) {
+        setTimeout(hideLoader, minDuration - elapsed);
+      } else {
+        hideLoader();
+      }
+    };
+    // If video is looping, fallback to minDuration
+    setTimeout(hideLoader, minDuration);
+  } else {
+    // Fallback if no video
+    setTimeout(hideLoader, minDuration);
+  }
+});

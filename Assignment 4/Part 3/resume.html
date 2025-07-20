@@ -74,6 +74,20 @@ Description: Creating resume using HTML and CSS.
     </style>
 </head>
 <body>
+<div id="video-loader" style="
+  position:fixed;
+  top:0;left:0;width:100vw;height:100vh;
+  background:#e6f2ff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  z-index:9999;
+">
+  <video id="loader-video" autoplay muted style="width:100vw; height:100vh; object-fit:cover;">
+    <source src="images/Loading.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
     <a class="linkedin-topright" href="https://www.linkedin.com/in/jason-ou-242a75251/" target="_blank" title="LinkedIn">
       <img src="images/LinkedIn_logo_initials.png" alt="LinkedIn Profile">
     </a>
