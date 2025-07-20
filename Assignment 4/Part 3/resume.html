@@ -12,6 +12,11 @@ Description: Creating resume using HTML and CSS.
     <title>Jason Ou's Resume</title>
     <link rel="stylesheet" href="style.css" />
     <style>
+      body {
+        background-color: #e6f2ff; /* light blue */
+        width: 640px;
+        margin: 0 auto;
+      }
       h2 {
         border-bottom: 1px solid #aaa;
         padding-bottom: 4px;
@@ -45,9 +50,33 @@ Description: Creating resume using HTML and CSS.
         text-align: center;
         margin-bottom: 1.5em;
       }
+      /* LinkedIn icon top right */
+      .linkedin-topright {
+        position: absolute;
+        top: 24px;
+        right: 24px;
+        z-index: 10;
+      }
+      .linkedin-topright img {
+        width: 40px;
+        height: 40px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        transition: box-shadow 0.2s;
+      }
+      .linkedin-topright img:hover {
+        box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+      }
+      /* Ensure body is relatively positioned for absolute child */
+      html, body {
+        position: relative;
+      }
     </style>
 </head>
 <body>
+    <a class="linkedin-topright" href="https://www.linkedin.com/in/jason-ou-242a75251/" target="_blank" title="LinkedIn">
+      <img src="Linkedin_logo_initials.png" alt="LinkedIn Profile">
+    </a>
     <h1>Jason Ou</h1>
     <address>
       225 Kentland Street, L6E 2E2<br>
