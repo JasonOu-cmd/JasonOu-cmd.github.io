@@ -26,7 +26,8 @@
         <li><a href="#">Blog</a></li>
       </ul>
       <form class="search" role="search">
-        <input type="search" name="q" placeholder="Search query" aria-label="Search query">
+        <label for="search" class="sr-only">Search the site</label>
+        <input type="search" id="search" name="q" placeholder="Search query" aria-label="Search query">
         <input type="submit" value="Go!">
       </form>
     </nav>
@@ -98,7 +99,7 @@
         </aside>
 
         <section class="comments">
-          <div class="show-hide">Show comments</div>
+          <div class="show-hide" role="button" tabindex="0" aria-pressed="false">Show comments</div>
 
           <div class="comment-wrapper">
 
