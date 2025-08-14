@@ -51,8 +51,9 @@ p, li, table {
 
 /* || header layout */
 
-div[class="nav"], article, footer, .secondary {
-  background-color: green;
+nav.nav, article, footer, .secondary {
+  background-color: #f7f7f7; /* light background for content */
+  color: #222; /* dark text for contrast */
 }
 
 article, footer, .secondary {
@@ -63,33 +64,33 @@ article {
   margin-right: 10px;
 }
 
-div[class="nav"] {
+nav.nav {
   height: 50px;
-  background-color: ff80ff;
+  background-color: #005a43; /* dark green for nav */
   display: flex;
   padding: 1% 0;
   margin-bottom: 10px;
 }
 
-div[class="nav"] ul {
+nav.nav ul {
   padding: 0;
   list-style-type: none;
   flex: 2;
   display: flex;
 }
 
-div[class="nav"] li {
+nav.nav li {
   display: inline;
   text-align: center;
   flex: 1;
 }
 
-div[class="nav"] a {
+nav.nav a {
   display: inline-block;
   font-size: 2rem;
   text-transform: uppercase;
   text-decoration: none;
-  color: black;
+  color: #fff; /* white text for nav links */
 }
 
 div[class="nav"] .search {
@@ -117,22 +118,11 @@ div[class="nav"] .search {
   color: white;
 }
 
-/* || main layout */
-
-main {
-  display: flex;
-}
-
-article {
-  flex: 5;
-}
-
-.secondary {
-  flex: 2;
-}
-
-footer {
-  margin-top: 10px;
+header.header {
+  background: #005a43;
+  color: #fff;
+  padding: 1.5rem 0;
+  text-align: center;
 }
 
 /* Table styling */
@@ -152,7 +142,9 @@ td {
 }
 
 th[scope="col"] {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #005a43;
+  background: #e0f5ea;
+  color: #005a43;
 }
 
 tbody tr:nth-child(odd) {
