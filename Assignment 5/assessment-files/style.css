@@ -240,3 +240,12 @@ audio {
 .comment-container li p:nth-child(2) {
   flex: 5;
 }
+
+.audio-transcript {
+  margin: 1em auto;
+  max-width: 500px;
+  font-size: 1.4rem;
+  background: #eef;
+  padding: 1em;
+  border-radius: 6px;
+}
